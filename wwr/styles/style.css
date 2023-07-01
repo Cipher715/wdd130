@@ -242,6 +242,149 @@ footer .social img {
     background-color: #219ebc;
 }
 
+/*Rivers Page Below*/
+
+#river-hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#river-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#river-img {
+    width: 100%;
+}
+
+#river-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 170px;
+}
+
+#river-msg h1 {
+    text-align: center;
+    color: white;
+    font-family: var(--heading-font);
+}
+
+#river-msg p {
+    text-align: center;
+    color: white;
+    font-family: var(--paragraph-font);
+}
+
+.river-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: auto 20px;
+}
+
+#idaho-title{
+    background-color: #FFB703;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    grid-column: 2/10;
+    grid-row: 1/3;
+}
+
+#idaho-img{
+    margin-top: 20px;
+    width: 100%;
+    grid-column: 2/9;
+    grid-row: 4/8;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#idaho-msg{
+    padding-left: 10px;
+    padding-right: 20px;
+    grid-column: 9/21;
+    grid-row: 6/10;
+}
+
+#idaho-back{
+    grid-column: 8/21;
+    grid-row: 5/11;
+    background-color: #8ecae6;
+    z-index: -1;
+    margin-top: 85px;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#utah-title{
+    background-color: #FFB703;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;
+    grid-column: 2/9;
+    grid-row: 12/14;
+}
+
+#utah-img{
+    margin-top: 20px;
+    width: 100%;
+    grid-column: 2/9;
+    grid-row: 15/19;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#utah-back{
+    grid-column: 8/21;
+    grid-row: 16/22;
+    background-color: #8ecae6;
+    z-index: -1;
+    margin-top: 85px;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#utah-msg{
+    padding-left: 10px;
+    padding-right: 20px;
+    grid-column: 9/21;
+    grid-row: 17/21;
+}
+
+#arizona-title{
+    text-align: center;
+    color: white;
+    background-color: #FFB703;
+    border-radius: 5px;
+    margin-top: 30px;
+    grid-column: 2/9;
+    grid-row: 22/24;
+}
+
+#arizona-img{
+    margin-top: 20px;
+    width: 100%;
+    grid-column: 2/9;
+    grid-row: 25/29;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#arizona-back{
+    grid-column: 8/21;
+    grid-row: 26/32;
+    background-color: #8ecae6;
+    z-index: -1;
+    margin-top: 85px;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#arizona-msg{
+    padding-left: 10px;
+    padding-right: 20px;
+    grid-column: 9/21;
+    grid-row: 27/31;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;

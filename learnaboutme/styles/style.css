@@ -163,6 +163,7 @@ main h2, p {
     background-color: #648de5;
     place-content: center;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px #4d4f4a;
 }
 
 #app-bg {
@@ -170,6 +171,8 @@ main h2, p {
     background-color: #e8e5da;
     border-radius: 10px;
     z-index: -1;
+    box-shadow: 5px 5px 10px #4d4f4a;
+
 }
 
 #app-dsc {
@@ -183,6 +186,7 @@ main h2, p {
     background-color: #648de5;
     place-content: center;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px #4d4f4a;
 }
 
 #web-bg {
@@ -190,6 +194,7 @@ main h2, p {
     background-color: #e8e5da;
     border-radius: 10px;
     z-index: -1;
+    box-shadow: 5px 5px 10px #4d4f4a;
 }
 
 #web-dsc {
@@ -227,6 +232,7 @@ footer .social img {
     margin-top: 20%;
     position: fixed;
     overflow: auto;
+    box-shadow: 5px 5px 10px #4d4f4a;
 }
 
 .icon-bar a {

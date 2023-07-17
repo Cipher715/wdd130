@@ -158,9 +158,10 @@ main h2, p {
 }
 
 #app-box {
+    display: grid;
     grid-area: 1/8/3/14;
     background-color: #648de5;
-    text-align: center;
+    place-content: center;
     border-radius: 10px;
 }
 
@@ -177,9 +178,10 @@ main h2, p {
 }
 
 #web-box {
+    display: grid;
     grid-area: 5/8/7/14;
     background-color: #648de5;
-    text-align: center;
+    place-content: center;
     border-radius: 10px;
 }
 
@@ -215,4 +217,71 @@ footer p {
 
 footer .social img {
     padding-top: 15px;
+}
+
+
+.icon-bar {
+    width: 90px; /* Set a specific width */
+    height: 360px;
+    background-color: #555; /* Dark-grey background */
+    margin-top: 20%;
+    position: fixed;
+    overflow: auto;
+}
+
+.icon-bar a {
+width: auto;
+height: 90px;
+display: grid;
+place-content: center;
+color: white;
+font-size: 35px;
+}
+
+.icon-bar a i {
+align-self: center;
+}
+.icon-bar a img {
+height: 90px;
+align-self: center;
+justify-self: center;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid , #home-content{
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h1, #hero-msg p, #hero-msg a{
+        color: black;
+    }
+    #background, #name, #message, #career { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #introimg {
+        display: none;
+    }
+    #home-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(30, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+    }
+    footer {
+        margin-top: 25px;
+    }
 }

@@ -10,7 +10,7 @@
     --accent2-color: #cdc392;
 }
 
-a, p, h1, h2, h4 { 
+a, p, h1, h4 { 
     font-family: var(--paragraph-font);
 }
 
@@ -73,6 +73,7 @@ header {
 }
 
 #hero-img {
+    height: 500px;
     width: 100%;
 }
 
@@ -100,7 +101,7 @@ header {
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
 #background {
@@ -145,12 +146,10 @@ main h2, p {
 }
 
 #home-content {
-    width: 100%;
-    height: 500px;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: repeat(15, 1fr);
-    margin-bottom: -300px;
+    grid-template-rows: repeat(8, 1fr);
 }
 
 #home-content a{
@@ -172,7 +171,6 @@ main h2, p {
     border-radius: 10px;
     z-index: -1;
     box-shadow: 5px 5px 10px #4d4f4a;
-
 }
 
 #app-dsc {
@@ -182,7 +180,7 @@ main h2, p {
 
 #web-box {
     display: grid;
-    grid-area: 5/8/7/14;
+    grid-area: 6/8/8/14;
     background-color: #648de5;
     place-content: center;
     border-radius: 10px;
@@ -190,7 +188,7 @@ main h2, p {
 }
 
 #web-bg {
-    grid-area: 6/13/8/25;
+    grid-area: 7/13/9/25;
     background-color: #e8e5da;
     border-radius: 10px;
     z-index: -1;
@@ -198,14 +196,14 @@ main h2, p {
 }
 
 #web-dsc {
-    grid-area: 6/14/8/24;
+    grid-area: 7/14/9/24;
     text-align: right;
 }
 
 footer {
     background-color: #cdc392;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -236,24 +234,169 @@ footer .social img {
 }
 
 .icon-bar a {
-width: auto;
-height: 90px;
-display: grid;
-place-content: center;
-color: white;
-font-size: 35px;
+    width: auto;
+    height: 90px;
+    display: grid;
+    place-content: center;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
 }
 
 .icon-bar a i {
-align-self: center;
+    align-self: center;
 }
 .icon-bar a img {
-height: 90px;
-align-self: center;
-justify-self: center;
+    height: 90px;
+    align-self: center;
+    justify-self: center;
 }
 
+/*App page*/
+
+.sub-hero {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.sub-hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+.sub-hero-img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.sub-hero-msg {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    place-content: center;
+    text-align: center;
+    color: black;
+    font-family: var(--heading-font);
+}
+
+#app-grid {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(17, 40px);
+}
+
+#battle-title {
+    grid-area: 1/4/2/28;
+}
+
+#battle-button {
+    grid-area: 3/4/9/13;
+    z-index: 1;
+}
+
+#battleship {
+    grid-area: 3/4/9/12;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#battle-bg {
+    grid-area: 8/10/11/28;
+    background-color: #e8e5da;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#battle-dsc {
+    grid-area: 8/12/11/28;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+#msg-bg {
+    grid-area: 15/5/18/27;
+    background-color: #e8e5da;
+    z-index: -1;
+    border-radius: 10px;
+    height: 70%;
+    align-self: center;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#app-msg {
+    grid-area: 15/6/18/26;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Website Page*/
+
+#web-grid {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(17, 40px);
+}
+
+#rafting-title {
+    grid-area: 1/4/2/28;
+}
+
+#rafting-button {
+    grid-area: 3/4/9/13;
+    z-index: 1;
+}
+
+#rafting {
+    grid-area: 3/4/9/12;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#rafting-bg {
+    grid-area: 8/10/11/28;
+    background-color: #e8e5da;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #4d4f4a;
+}
+
+#rafting-dsc {
+    grid-area: 8/12/11/28;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    line-height: 0.8em;
+}
+
+#webpage-bg {
+    grid-area: 15/5/18/27;
+    background-color: #e8e5da;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #4d4f4a;
+    height: 70%;
+    align-self: center;
+}
+
+#webpage-msg {
+    grid-area: 15/6/18/26;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+
 @media screen and (max-width: 900px) {
+
+    .icon-bar {
+        display: none;
+    }
     #hero, .home-grid , #home-content{
         display: block;
         height: auto;
@@ -282,10 +425,64 @@ justify-self: center;
         display: none;
     }
     #home-content {
-        width: 100%;
+        margin-top: 25px;
         display: grid;
         grid-template-columns: repeat(30, 1fr);
-        grid-template-rows: repeat(15, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+    #app-box {
+        display: grid;
+        grid-area: 1/6/3/14;
+        background-color: #648de5;
+        place-content: center;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #4d4f4a;
+    }
+    #web-box {
+        display: grid;
+        grid-area: 6/6/8/14;
+        background-color: #648de5;
+        place-content: center;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #4d4f4a;
+    }
+    .sub-hero, #app-grid, #web-grid{
+        display: block;
+        height: auto;
+    }
+    .sub-hero-img {
+        display: none;
+    }
+    .sub-hero-msg {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        place-content: center;
+        text-align: center;
+        color: black;
+        font-family: var(--heading-font);
+        background-color: #e8e5da;
+    }
+    #battleship {
+        width: 50%;
+    }
+    #battle-dsc {
+        grid-area: 3/12/4/28;
+        display: grid;
+        justify-content: right;
+        margin-right: 30px;
+    }
+
+    #rafting {
+        width: 50%;
+    }
+    #rafting-dsc {
+        grid-area: 3/12/4/28;
+        display: grid;
+        justify-content: right;
+        margin-right: 30px;
     }
     footer {
         margin-top: 25px;
